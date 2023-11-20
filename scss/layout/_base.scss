@@ -28,3 +28,15 @@ img {
     transform: $transform-img;
   }
 }
+
+*::-webkit-scrollbar {
+  width: 12rem;
+  height: 12rem;
+  background-color: $section-bg;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 6rem;
+  background-color: $primary-color;
+  
+}

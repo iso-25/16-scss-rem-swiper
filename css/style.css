@@ -58,6 +58,17 @@ img:hover {
   transform: scale(1.08);
 }
 
+*::-webkit-scrollbar {
+  width: 12rem;
+  height: 12rem;
+  background-color: #111827;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 6rem;
+  background-color: #eab308;
+}
+
 .btn {
   padding: 8rem 20rem;
   display: inline-block;
