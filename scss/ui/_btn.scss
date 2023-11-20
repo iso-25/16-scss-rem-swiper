@@ -14,4 +14,9 @@
 	&:hover {
 		background: lighten($primary-color, 10%);
 	}
+
+	&:active {
+		transition: $transition;
+		transform: $transform-btn;
+	  }  
 }

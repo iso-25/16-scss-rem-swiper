@@ -27,6 +27,11 @@ img {
   &:hover {
     transform: $transform-img;
   }
+
+  &:active {
+    transition: $transition-brightness;
+    filter: brightness(70%);
+  }  
 }
 
 *::-webkit-scrollbar {
@@ -38,5 +43,5 @@ img {
 *::-webkit-scrollbar-thumb {
   border-radius: 6rem;
   background-color: $primary-color;
-  
 }
+

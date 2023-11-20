@@ -2,6 +2,11 @@
   padding: 96rem 0;
   padding-right: 18rem;
   background: $section-bg;
+
+  background: linear-gradient(to left, $section-bg, $body-bg);
+  background-size: 200% 100%;
+  animation: gradientAnimation 2s linear infinite;
+
   @include mobile {
     padding-right: 0;
   }

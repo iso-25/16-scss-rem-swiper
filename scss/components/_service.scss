@@ -2,6 +2,10 @@
   padding: 96rem 0;
   background: $section-bg;
 
+  background: linear-gradient(to left, $section-bg, $body-bg);
+  background-size: 200% 100%;
+  animation: gradientAnimation 2s linear infinite;
+
   .container {
     align-items: center;
     justify-content: space-between;
