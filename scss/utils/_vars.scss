@@ -1,0 +1,50 @@
+$ff: "Lexend Deca", sans-serif;
+
+// const colors
+$white: #fff;
+$black: #000;
+
+$body-bg: #020617;
+$body-color: $white;
+
+$section-bg: #111827;
+
+$primary-color: #eab308;
+
+$header-link: #9ca3af;
+$header-link-active: $white;
+
+$btn-text-color: $black;
+$btn-radius: 4rem;
+
+$transition: 0.2s all ease-out;
+$transform-nav: scale(1.2);
+$transform-img: scale(1.08);
+
+$transition-link-ico: 0.4s all ease-out;
+$transform-link-ico: scale(1.5);
+
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+$mobile-very-small: 320px;
+
+$desc-colot-txt: #6b7280;
+$title-color-txt: #f3f4f6;
+$abovetitle-item-color-txt: #D1D5DB;
+$undertitle-item-color-txt: #D1D5DB;
+
+$form-input-background-color: #1F2937;
+
+// :root селектор зі змінними
+:root {
+    --swiper-navigation-color: #{$primary-color};
+    --swiper-pagination-color: #{$primary-color};
+    --swiper-pagination-bullet-inactive-color: #{$section-bg}; 
+    --swiper-pagination-bullet-inactive-opacity: .6;
+    --swiper-navigation-size: 44rem;
+    --swiper-pagination-bullet-horizontal-gap: 15rem;
+    --swiper-pagination-bullet-width: 20rem;
+    --swiper-pagination-bullet-height: 20rem;
+}

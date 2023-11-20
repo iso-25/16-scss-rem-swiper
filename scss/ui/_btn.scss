@@ -1,0 +1,17 @@
+.btn {
+	padding: 8rem 20rem;
+	display: inline-block;
+	cursor: pointer;
+	outline: 0;
+	border: 0;
+	border-radius: $btn-radius;
+	background: $primary-color;
+	color: $btn-text-color;
+	font-size: 16rem;
+	font-weight: 400;
+	line-height: 27rem;
+	transition: $transition;
+	&:hover {
+		background: lighten($primary-color, 10%);
+	}
+}

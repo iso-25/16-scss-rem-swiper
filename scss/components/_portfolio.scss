@@ -1,0 +1,110 @@
+.portfolio {
+  padding: 96rem 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__info {
+    max-width: 461rem;
+    margin-bottom: 80rem;
+  }
+
+  &__title {
+    @extend %title;
+    text-align: center;
+    span {
+      color: $primary-color;
+    }
+    margin-bottom: 24rem;
+  }
+
+  &__desc {
+    @extend %desc;
+    text-align: center;
+  }
+
+  .portfolio-images {
+    & img {
+      width: 100%;
+      border-radius: 12rem;
+    }
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 27rem;
+
+    .portfolio-box1 {
+      display: flex;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+
+    @include tablet-small {
+      display: none;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15rem;
+    }
+
+    @include mobile-small {
+      grid-template-columns: 1fr;
+
+      .portfolio-box1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+
+      .portfolio-box2 {
+        width: 100%;
+      }
+    }
+  }
+
+  // .swiper-button-next, .swiper-button-prev {
+  //   :root {
+  //     --swiper-navigation-size: 44rem;
+  // }    
+  // }
+  swiper-container {
+    display: none;
+    width: 100%;
+    height: 100%;
+    @include tablet-small {
+      display:flex;
+    }
+
+  }
+
+  swiper-slide {
+    :root {
+      --swiper-navigation-size: 44rem;
+  }    
+  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12rem;
+
+    transition: none;
+      &:hover {
+        transform:none;
+      }
+    
+  }
+
+}

@@ -1,0 +1,72 @@
+.service {
+  padding: 96rem 0;
+  background: $section-bg;
+
+  .container {
+    align-items: center;
+    justify-content: space-between;
+    gap: 89rem;
+  }
+
+  &__header {
+    justify-content: start;
+    margin-bottom: 56rem;
+  }
+
+  &__info {
+    max-width: 461rem;
+  }
+
+  &__title {
+    @extend %title;
+    span {
+      color: $primary-color;
+    }
+    margin-bottom: 24rem;
+  }
+
+  &__desc {
+    @extend %desc;
+  }
+
+  &__link {
+    transition: $transition;
+    &:hover {
+      transform: $transform-img;
+    }
+    
+  }
+
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300rem, 1fr));
+    gap: 30rem;
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+
+    .service-item {
+      @extend %grid-item;
+
+      &__img {
+        max-width: 40rem;
+        height: auto;
+        margin-inline: auto;
+        margin-bottom: 32rem;
+      }
+
+      &__title {
+        @extend %item-title;
+        max-width: 220rem;
+        margin-inline: auto;
+        margin-bottom: 16rem;
+      }
+
+      &__desc {
+        flex-grow: 1;
+        @extend %desc;
+        text-align: center;
+      }
+    }
+  }
+}

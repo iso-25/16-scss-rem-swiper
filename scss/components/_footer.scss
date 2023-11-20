@@ -1,0 +1,48 @@
+.footer {
+  padding: 56rem 0;
+
+  .container {
+    max-width: 685rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 56rem;
+  }
+
+  &__info {
+    text-align: center;
+    gap: 24rem;
+  }
+
+  &__title {
+    @extend %title;
+  }
+
+  &__desc {
+    @extend %desc;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: row;
+    gap: 16rem;
+
+    @include mobile-small {
+        flex-direction: column;
+      }
+      
+     & a {
+      transition: $transition-link-ico;
+      &:hover {
+        border: 3rem solid $primary-color;
+        border-radius: 3rem;
+        transform: $transform-link-ico;
+        background-color:darken($color:$white, $amount: 60) ;
+      }
+    }
+    
+  }
+}
+
+

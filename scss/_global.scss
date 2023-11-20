@@ -1,0 +1,38 @@
+%title {
+  color: $title-color-txt;
+  font-size: 42rem;
+  font-weight: 700;
+  line-height: 64rem;
+}
+
+%desc {
+  color: $desc-colot-txt;
+  font-size: 16rem;
+  font-weight: 400;
+  line-height: 27rem;
+}
+
+%item-title {
+  color: $title-color-txt;
+  text-align: center;
+  font-size: 26rem;
+  font-weight: 700;
+  line-height: 41rem;
+}
+
+%grid-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $body-bg;
+  border-radius: 12rem;
+  padding: 32rem;
+}
+
+%style-text-msg {
+  color: $title-color-txt;
+  font-family: $ff;
+  font-size: 16rem;
+  font-weight: 400;
+  line-height: 41rem;
+}

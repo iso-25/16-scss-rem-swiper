@@ -1,0 +1,61 @@
+.welcome {
+  padding: 96rem 0;
+  padding-right: 18rem;
+  background: $section-bg;
+  @include mobile {
+    padding-right: 0;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20rem;
+    @include mobile {
+      flex-direction: column-reverse;
+      align-items: start;
+    }
+  }
+
+  &__hello {
+    color: $primary-color;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 27rem;
+    margin-bottom: 24rem;
+  }
+
+  &__name {
+    @extend %title;
+    margin-bottom: 8rem;
+  }
+
+  &__role {
+    @extend %desc;
+    margin-bottom: 24rem;
+    max-width: 466rem;
+  }
+
+  &__img-wrapper {
+    max-width: 427rem;
+    flex-shrink: 0;
+
+    @include tablet {
+      max-width: 50%;
+      flex-shrink: inherit;
+    }
+
+    @include mobile {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    & img {
+      width: 100%;
+      border-radius: 24rem;
+    }
+  }
+}

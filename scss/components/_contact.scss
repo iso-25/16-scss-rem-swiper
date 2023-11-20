@@ -1,0 +1,125 @@
+.contact {
+  padding: 96rem 0;
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 685rem;
+    margin-bottom: 56rem;
+    gap: 24rem;
+  }
+
+  &__title {
+    @extend %title;
+    max-width: 242rem;
+    span {
+      color: $primary-color;
+    }
+  }
+
+  &__desc {
+    @extend %desc;
+    text-align: center;
+  }
+
+  &__block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40rem;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: start;
+    }
+
+  }
+
+  &__contacts {
+    max-width: 347rem;
+    color: $title-color-txt;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 41rem;
+  }
+
+  &__info-span {
+    color: $primary-color;
+    font-weight: 700;
+  }
+
+  &__msg {
+    max-width: 540rem;
+    width: 50%;
+    @include mobile {
+      max-width: 100%;
+      width: 100%;
+    }
+
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32rem;
+  }
+
+  &__name {
+    width: 350 / 540 * 100%;
+    padding: 11rem 18rem;
+    background: $form-input-background-color;
+    @extend %style-text-msg;
+    outline: none;
+    border: none;
+    &::placeholder{
+      @extend %style-text-msg;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+    
+  }
+
+  &__message {
+    width: 100%;
+    min-height: 166rem;
+    padding: 10rem 18rem;
+    background: $form-input-background-color;
+
+    @extend %style-text-msg;
+    outline: none;
+    border: none;
+    text-align: start;
+
+    resize: none;
+    &::placeholder{
+      @extend %style-text-msg;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+
+  }
+
+  &__btn {
+    max-width: 123rem;
+    transition: $transition;
+    &:hover {
+      background: lighten($primary-color, 10%);
+    }
+  
+  }
+}

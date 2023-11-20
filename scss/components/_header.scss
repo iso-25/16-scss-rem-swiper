@@ -1,0 +1,101 @@
+.header {
+  padding: 16rem 0;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  background: $body-bg;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20rem;
+  }
+
+  &__logo {
+    color: $white;
+    font-size: 24rem;
+    font-weight: 700;
+    display: flex;
+    transition: $transition;
+    span {
+      color: $primary-color;
+    }
+    &:hover {
+      transform: $transform-nav;
+    }
+  }
+
+  &__icon-back {
+    align-self: end;
+    margin: 20px;
+    margin-bottom: 50px;
+    display: none;
+    @include tablet {
+      display: flex;
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @include tablet {
+      display: inline-block;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 27rem;
+    align-items: center;
+
+    @include tablet {
+      position: fixed;
+      z-index: 2;
+      min-width: 250rem;
+      width: 30%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      background: $primary-color;
+      justify-content: start;
+      transition: $transition;
+      transform: translateX(-120%);
+
+      &.is-active {
+        transform: translateX(0);
+      }
+    }
+
+    @include mobile {
+      min-width: 40%;
+      width: 40%;
+    }
+  }
+
+  &__a {
+    color: $header-link;
+    font-size: 16rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: $transition;
+
+    @include tablet {
+      color: $black;
+    }
+
+    //&.is-active,
+    &.active,
+    &:hover {
+      color: $header-link-active;
+      transform: $transform-nav;
+    }
+  }
+}

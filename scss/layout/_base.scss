@@ -1,0 +1,30 @@
+html {
+  font-size: calc(0.6px + 0.4 * ((100vw - 320px) / (1440 - 320)));
+  @media screen and (min-width: 1440px) {
+    font-size: 1px;
+  }
+  scroll-behavior: smooth; //плавний скрол
+}
+
+body {
+  font-family: $ff;
+  background: $body-bg;
+  color: $body-color;
+}
+
+.wrapper{
+  padding-top: 62rem;
+}
+
+.container {
+  max-width: calc(1108rem + 40rem);
+  padding: 0 20rem;
+  margin-inline: auto;
+}
+
+img {
+  transition: $transition;
+  &:hover {
+    transform: $transform-img;
+  }
+}

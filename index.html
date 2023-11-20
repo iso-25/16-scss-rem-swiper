@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header">
+			<div class="container">
+				<a href="#section-welcome" class="header__logo">About <span>Me.</span></a>
+				<div class="header__nav links" id="headerNav">
+					<span class="material-icons header__icon-back" onclick="navToggle()">arrow_back</span>
+					<a href="#section-welcome" class="header__a scroll-to active" onclick="navToggle()">Home</a>
+					<a href="#section-about" class="header__a scroll-to" onclick="navToggle()">About</a>
+					<a href="#section-service" class="header__a scroll-to" onclick="navToggle()">Service</a>
+					<a href="#section-portfolio" class="header__a scroll-to" onclick="navToggle()">Portfolio</a>
+					<a href="#section-experience" class="header__a scroll-to" onclick="navToggle()">Resume</a>
+					<a href="/" class="header__a">Blog</a>
+					<a href="#section-contact" class="header__a scroll-to" onclick="navToggle()">ContAct</a>
+				</div>
+				<div class="header__mp">
+					<span class="material-icons header__menu" onclick="navToggle()">
+						menu
+					</span>
+				</div>
+			</div>
+		</header>
+
+		<!-- welcome -->
+		<section class="welcome anchor" id="section-welcome">
+			<div class="container">
+				<div class="welcome__info">
+					<div class="welcome__hello">Hello, Welcome</div>
+					<div class="welcome__name">I m Anderson Coper</div>
+					<div class="welcome__role">There are many variations of passages ofLorem Ipsum
+						available, but the majority havesuffered alteration in some
+						form, by injected humour,</div>
+					<a href="/" class="btn welcome__btn">Contact us</a>
+				</div>
+				<div class="welcome__img-wrapper">
+					<div class="welcome__img">
+						<img src="./img/man.png" alt="Man">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- about -->
+		<section class="about anchor" id="section-about">
+			<div class="container">
+				<div class="about__img-wrapper">
+					<div class="about__img">
+						<img src="./img/man-2.png" alt="Man-2">
+					</div>
+				</div>
+				<div class="about__info">
+					<div class="about__title">About <span>Me</span></div>
+					<div class="desc-1 about__desc">There are many variations of passages ofLorem Ipsum
+						available, but the majority havesuffered alteration in some
+						form, by injected humour,
+					</div>
+					<div class="desc-2 about__desc">Passages ofLorem Ipsumavailable, but the majority havesuffered
+						alteration in some form, by injected humour,
+					</div>
+					<a href="/" class="btn about__btn">Contact us</a>
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- service -->
+		<section class="service anchor" id="section-service">
+			<div class="container">
+				<div class="service__header">
+					<div class="service__info">
+						<div class="service__title">My <span>Service</span></div>
+						<div class="service__desc">There are many variations of passages ofLorem Ipsum
+							available, but the majority havesuffered alteration in some
+							form, by injected humour,
+						</div>
+					</div>
+				</div>
+
+				<div class="service-list">
+					<!-- Digital -->
+					<a href="/" class="service__link">
+						<div class="service-item">
+							<div class="service-item__img">
+								<img src="./img/icons/Serv-Digital.svg" alt="Digital">
+							</div>
+							<div class="service-item__title">Digital Marketing</div>
+
+							<div class="service-item__desc">There are many variations of passages ofLorem
+								Ipsumavailable,
+								but the majority havesuffered
+								alteration in some
+							</div>
+						</div>
+					</a>
+
+					<!-- Web -->
+					<a href="/" class="service__link">
+						<div class="service-item">
+
+							<div class="service-item__img">
+								<img src="./img/icons/Serv-Web.svg" alt="Web">
+							</div>
+							<div class="service-item__title">Web Devlopment</div>
+
+							<div class="service-item__desc">There are many variations of passages ofLorem
+								Ipsumavailable,
+								but the majority havesuffered
+								alteration in some
+							</div>
+						</div>
+					</a>
+
+					<!-- service -->
+					<a href="/" class="service__link">
+						<div class="service-item">
+							<div class="service-item__img">
+								<img src="./img/icons/Serv-Creative.svg" alt="Creative">
+							</div>
+							<div class="service-item__title">Creative Graphic Design</div>
+
+							<div class="service-item__desc">There are many variations of passages ofLorem
+								Ipsumavailable,
+								but the majority havesuffered
+								alteration in some
+							</div>
+						</div>
+					</a>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- portfolio -->
+		<section class="portfolio anchor" id="section-portfolio">
+			<div class="container">
+				<div class="portfolio__info">
+					<div class="portfolio__title">My <span>Portfolio</span></div>
+					<div class="portfolio__desc">There are many variations of passages ofLorem Ipsum
+						available, but the majority havesuffered alteration in some
+						form, by injected humour,
+					</div>
+				</div>
+				<div class="portfolio-images">
+					<div class="portfolio-box1">
+						<img src="./img/portfolio1.png" alt="portfolio1">
+					</div>
+					<div class="portfolio-box2">
+						<img src="./img/portfolio2.png" alt="portfolio2">
+					</div>
+					<div class="portfolio-box2">
+						<img src="./img/portfolio3.png" alt="portfolio3">
+					</div>
+					<div class="portfolio-box2">
+						<img src="./img/portfolio4.png" alt="portfolio4">
+					</div>
+					<div class="portfolio-box2">
+						<img src="./img/portfolio5.png" alt="portfolio5">
+					</div>
+				</div>
+
+				<!-- swiper -->
+				<swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="true"
+					css-mode="true">
+					<swiper-slide><img src="./img/portfolio1.png" alt="portfolio1"></swiper-slide>
+					<swiper-slide><img src="./img/portfolio2.png" alt="portfolio2"></swiper-slide>
+					<swiper-slide><img src="./img/portfolio3.png" alt="portfolio3"></swiper-slide>
+					<swiper-slide><img src="./img/portfolio4.png" alt="portfolio4"></swiper-slide>
+					<swiper-slide><img src="./img/portfolio5.png" alt="portfolio5"></swiper-slide>
+				</swiper-container>
+
+			</div>
+		</section>
+
+		<!-- experience -->
+		<section class="experience anchor" id="section-experience">
+			<div class="experience__wrapper">
+
+				<div class="container">
+
+					<div class="experience__header">
+						<div class="experience__info">
+							<div class="experience__title">My <span>Experiences</span></div>
+							<div class="experience__desc">There are many variations of passages ofLorem Ipsum
+								available, but the majority havesuffered alteration in some form, by injected humour,
+							</div>
+						</div>
+					</div>
+
+					<div class="experience-list">
+						<!-- UX/UI -->
+						<a href="/" class="experience__link">
+							<div class="box-1 experience-item">
+								<div class="experience-item_date">June-2002 - 2020</div>
+								<div class="experience-item__title">UX/UI Designer</div>
+								<div class="experience-item__app">Figma</div>
+								<div class="experience-item__desc">There are many variations of passages of Lorem
+									Ipsumav
+									ailable, but the majority have suffered
+									alteration in some
+								</div>
+							</div>
+						</a>
+						<!-- Product Designer -->
+						<a href="/" class="experience__link">
+							<div class="box-2 experience-item">
+								<div class="experience-item_date">June-2002 - 2020</div>
+								<div class="experience-item__title">Product Designer</div>
+								<div class="experience-item__app">Adobe Photoshop</div>
+								<div class="experience-item__desc">There are many variations of passages ofLorem
+									Ipsumavailable, but the majority havesuffered
+									alteration in some
+								</div>
+							</div>
+						</a>
+						<!-- Graphic Designer -->
+						<a href="/" class="experience__link">
+							<div class="box-1 experience-item">
+								<div class="experience-item_date">June-2002 - 2020</div>
+								<div class="experience-item__title">Graphic Designer</div>
+								<div class="experience-item__app">Adobe Photoshop</div>
+								<div class="experience-item__desc">There are many variations of passages ofLorem
+									Ipsumavailable, but the majority havesuffered
+									alteration in some
+								</div>
+							</div>
+						</a>
+					</div>
+
+
+				</div>
+			</div>
+
+		</section>
+
+		<!-- contact -->
+		<section class="contact anchor" id="section-contact">
+			<div class="container">
+				<div class="contact__info">
+					<div class="contact__title">Contact <span>Me</span></div>
+					<div class="contact__desc">There are many variations of passages ofLorem Ipsumavailable, but the
+						majority havesuffered alteration in some form, by injected humour,
+					</div>
+				</div>
+				<div class="contact__block">
+					<div class="contact__contacts">
+						<div class="contact_adress">
+							<span class="contact__info-span">Address _</span> 23 S 80 Road, Benedict,ne, 68316
+							United States
+						</div>
+						<div class="contact__phone">
+							<span class="contact__info-span">Phone _</span> +01 123 456 789
+						</div>
+						<div class="contact__email">
+							<span class="contact__info-span">E mail _</span> abc.xyz@gmail.com
+						</div>
+						<div class="contact__site">
+							<span class="contact__info-span">Website _</span> www.abc.xyz.com
+						</div>
+					</div>
+					<div class="contact__msg">
+						<form action="" method="get" class="contact__form" id="contact-form">
+							<input type="text" class="contact__name" placeholder="Name" form="contact-form" required>
+							<textarea class="contact__message" placeholder="Message" form="contact-form"
+								required></textarea>
+							<button class="btn contact__btn" type="submit" form="contact-form">Contact us</button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+		<!-- footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__info">
+					<div class="footer__title">AboutMe.</div>
+					<div class="footer__desc">There are many variations of passages ofLorem Ipsumavailable, but the
+						majority
+						havesuffered alteration in some form,
+					</div>
+				</div>
+				<div class="footer__link">
+					<a href="/"><img src="./img/icons/Frame.svg" alt="Facebook"></a>
+					<a href="/"> <img src="./img/icons/Frame-1.svg" alt="Twitter"></a>
+					<a href="/"> <img src="./img/icons/Frame-2.svg" alt="LinkedIn" class="is-active"></a>
+					<a href="/"> <img src="./img/icons/Frame-3.svg" alt="Instagram"></a>
+					<a href="/"> <img src="./img/icons/Frame-4.svg" alt="YouTube"></a>
+					<a href="/"> <img src="./img/icons/Frame-5.svg" alt="Pinterest"></a>
+				</div>
+
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<script src="scroll.js"></script>
+	<!-- <script src="swiper.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>
