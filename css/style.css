@@ -92,7 +92,7 @@ img:active {
 }
 .btn:active {
   transition: 0.2s all ease-out;
-  transform: scale(0.9);
+  transform: scale(0.8);
 }
 
 .footer__title, .contact__title, .experience__title, .portfolio__title, .service__title, .about__title, .welcome__name {
@@ -142,14 +142,6 @@ img:active {
   line-height: 41rem;
 }
 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 100% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
 .header {
   padding: 16rem 0;
   margin-inline: auto;
@@ -251,9 +243,6 @@ img:active {
   padding: 96rem 0;
   padding-right: 18rem;
   background: #111827;
-  background: linear-gradient(to left, #111827, #020617);
-  background-size: 200% 100%;
-  animation: gradientAnimation 2s linear infinite;
 }
 @media (max-width: 576px) {
   .welcome {
@@ -381,9 +370,6 @@ img:active {
 .service {
   padding: 96rem 0;
   background: #111827;
-  background: linear-gradient(to left, #111827, #020617);
-  background-size: 200% 100%;
-  animation: gradientAnimation 2s linear infinite;
 }
 .service .container {
   align-items: center;
@@ -543,9 +529,6 @@ img:active {
   align-items: center;
   justify-content: center;
   gap: 80rem;
-  background: linear-gradient(to left, #111827, #020617);
-  background-size: 200% 100%;
-  animation: gradientAnimation 2s linear infinite;
 }
 @media (max-width: 992px) {
   .experience .container {

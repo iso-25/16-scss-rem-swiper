@@ -16,10 +16,6 @@
     justify-content: center;
     gap: 80rem;
 
-    background: linear-gradient(to left, $section-bg, $body-bg);
-    background-size: 200% 100%;
-    animation: gradientAnimation 2s linear infinite;
-
     @include tablet {
       padding: 85rem 20rem;
     }
